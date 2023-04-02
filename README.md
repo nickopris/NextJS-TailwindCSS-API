@@ -11,3 +11,9 @@ yarn dev
 # or
 pnpm dev
 ```
+
+## Deploy to a server
+- run `npm run build`
+- install pm2
+- run `pm2 start npm --name app1 -- run start -- -p 3000` or use `npx` in front of this command
+- proxy 3000 to whatever in nginx
